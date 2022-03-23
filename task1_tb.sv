@@ -12,7 +12,39 @@ task1b u2 (y_other, a, b, c);
 
 initial
 begin
-	//Write your testbench here
+	
+	a = 1'b0;
+	b = 1'b0;
+	c = 1'b0;
+	#50ps;
+	a = 1'b0;
+	b = 1'b0;
+	c = 1'b1;
+	#50ps;
+	a = 1'b0;
+	b = 1'b1;
+	c = 1'b0;
+	#50ps;
+	a = 1'b0;
+	b = 1'b1;
+	c = 1'b1;
+	#50ps;
+	a = 1'b1;
+	b = 1'b0;
+	c = 1'b0;
+	#50ps;
+	a = 1'b1;
+	b = 1'b0;
+	c = 1'b1;
+	#50ps;
+	a = 1'b1;
+	b = 1'b1;
+	c = 1'b0;
+	#50ps;
+	a = 1'b1;
+	b = 1'b1;
+	c = 1'b1;
+	#50ps $display("DONE");
 
 end
 
