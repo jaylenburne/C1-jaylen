@@ -1,8 +1,8 @@
 module task2_tb;
 
 // Add internal signals here
-input logic (CLK, n_RESET);
-output logic ([15:0] Q);
+input logic CLK, n_RESET;
+output logic [15:0] Q;
 
 parameter N = 16'b1010110011100001;
 int counter = 0;
@@ -10,7 +10,7 @@ task2 c1 (Q, CLK, n_RESET);
 
 task loop1;
   $display("Initial value is correct");   //when initial value is correct and passes 
-endtask: value0;
+endtask: loop1;
 
 task loop2;
   $display("Full loop has passed");       //when initial value is equal to 65535
@@ -29,13 +29,44 @@ task value3;
 endtask: value3;
 
 task failed;
-  $display("Fail")                        //when outputs are different
+  $display("Fail");                       //when outputs are different
 endtask: failed;
 
 initial begin
 
 //Write testbench here
 
-end
+n_RESET = 0; //resets the signal
+#1ps
+n_RESET = 1;
 
-endmodule
+  CLK = 0;          //block to simulate clock cycle
+    repeat(131070)    //clock needs 2ps per peroid, so 65535*2=131070
+    #1ps
+    CLK = ~CLK;       //inverts clock value
+    #1ps
+    CLK = ~CLK;
+
+@( posedge CLK ) begin
+  if (counter == 0)
+    assert (Q == N) loop1(); 
+	 else failed();
+  else if (counter == 1)
+    assert (Q == 16'b1110001001110000) value1;
+	 else failed();
+  else if (counter == 2)
+    assert (Q == 16'b0111000100111000) value2;
+	 else failed();
+  else if (counter == 3)
+    assert (Q == 16'b0011100010011100) value3;
+	 else failed();
+  else if (counter == 65535)
+    assert (Q == N) loop2;
+	 else failed();
+  counter = counter +1;
+
+  end
+
+  endmodule
+  
+  
