@@ -13,7 +13,7 @@ A	B	C	Y		Y1		Y2
 1	1	1	11		1		1
 */
 
-module task1a(output logic [1:0] Y, input logic A, B, C);
+module task1a(output logic Y1, Y2, input logic A, B, C);
 
 wire a1, a2, a3, a4, notA, notB, notC;
 
@@ -25,18 +25,14 @@ and and1 (a1, notA, B, C);
 and and2 (a2, A, notB, C);
 and and3 (a3, A, B, notC);
 and and4 (a4, A, B, C);
-or res (Y1, a1, a2, a3, a4);
+or res (Y, a1, a2, a3, a4);
 
 //Y2
 and and11 (a11, notA, notB, C);
 and and22 (a22, notA, B, notC);
 and and33 (a33, A, notB, notC);
 and and44 (a44, A, B, C);
-or res2 (Y2, a11, a22, a33, a44);
-
-//combine
-or c1 (Y[1], Y1);
-or c2 (Y[0], Y2);
+or res2 (Y, a11, a22, a33, a44);
 
 endmodule
 

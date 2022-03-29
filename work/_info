@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jburne/Documents/GitHub/C1-jaylen
+vtask1_tb
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1648579409
+!i10b 1
+!s100 aialbX=7UX[kJXIiDKGo30
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IGPOzgAi00gK@CUNEW4>Wm1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1648578656
+8C:/Users/jburne/Documents/GitHub/C1-jaylen/task1_tb.sv
+FC:/Users/jburne/Documents/GitHub/C1-jaylen/task1_tb.sv
+!i122 0
+L0 1 51
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1648579409.000000
+!s107 C:/Users/jburne/Documents/GitHub/C1-jaylen/task1_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jburne/Documents/GitHub/C1-jaylen/task1_tb.sv|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vtask1a
+R1
+!s110 1648579461
+!i10b 1
+!s100 gIzi;aV4CAlkQC`RB5D^_0
+R2
+INYJ]P;`b1bNg2;j4K0A;J3
+R3
+S1
+R0
+w1648579457
+8C:/Users/jburne/Documents/GitHub/C1-jaylen/task1a.sv
+FC:/Users/jburne/Documents/GitHub/C1-jaylen/task1a.sv
+!i122 2
+L0 16 26
+R4
+r1
+!s85 0
+31
+!s108 1648579461.000000
+!s107 C:/Users/jburne/Documents/GitHub/C1-jaylen/task1a.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jburne/Documents/GitHub/C1-jaylen/task1a.sv|
+!i113 1
+R5
+R6
+vtask1b
+R1
+!s110 1648579418
+!i10b 1
+!s100 GRSednh;Xlob3AT3:KoV]0
+R2
+Icm>nOHI>eg0V6P9TJmld]2
+R3
+S1
+R0
+w1648579363
+8C:/Users/jburne/Documents/GitHub/C1-jaylen/task1b.sv
+FC:/Users/jburne/Documents/GitHub/C1-jaylen/task1b.sv
+!i122 1
+L0 15 26
+R4
+r1
+!s85 0
+31
+!s108 1648579418.000000
+!s107 C:/Users/jburne/Documents/GitHub/C1-jaylen/task1b.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jburne/Documents/GitHub/C1-jaylen/task1b.sv|
+!i113 1
+R5
+R6
