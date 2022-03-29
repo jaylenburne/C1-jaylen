@@ -47,7 +47,7 @@ n_RESET = 1;
     #1ps
     CLK = ~CLK;
 
-@( posedge CLK ) begin
+ @( posedge CLK ) begin
   if (counter == 0)
     assert (Q == N) loop1(); 
 	 else failed();
@@ -65,8 +65,6 @@ n_RESET = 1;
 	 else failed();
   counter = counter +1;
 
-  end
-
-  endmodule
-  
-  
+ end
+ 
+endmodule
