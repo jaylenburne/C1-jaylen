@@ -1,8 +1,9 @@
 module task2_tb;
 
-// Add internal signals here
-input logic CLK, n_RESET;
-output logic [15:0] Q;
+// Add internal signals her
+
+logic CLK, n_RESET; //input
+logic [15:0] Q;     //output
 
 parameter N = 16'b1010110011100001;
 int counter = 0;
@@ -32,7 +33,8 @@ task failed;
   $display("Fail");                       //when outputs are different
 endtask: failed;
 
-initial begin
+initial 
+begin
 
 //Write testbench here
 
@@ -46,8 +48,9 @@ n_RESET = 1;
     CLK = ~CLK;       //inverts clock value
     #1ps
     CLK = ~CLK;
+end
 
- @( posedge CLK ) begin
+always@( posedge CLK ) begin
   if (counter == 0)
     assert (Q == N) loop1(); 
 	 else failed();
@@ -63,8 +66,8 @@ n_RESET = 1;
   else if (counter == 65535)
     assert (Q == N) loop2;
 	 else failed();
-  counter = counter +1;
+  counter = counter + 1;
+  
+end
 
- end
- 
 endmodule

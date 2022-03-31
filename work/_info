@@ -109,3 +109,28 @@ r1
 !i113 1
 R5
 R6
+vtask2_tb
+R1
+!s110 1648729476
+!i10b 1
+!s100 ]F]<j]CazHMQWgjbKH=]a0
+R2
+Ib032<moLkgCifmBJTIW0g1
+R3
+S1
+R0
+w1648729474
+8C:/Users/jburne/Documents/GitHub/C1-jaylen/task2_tb.sv
+FC:/Users/jburne/Documents/GitHub/C1-jaylen/task2_tb.sv
+!i122 5
+L0 1 73
+R4
+r1
+!s85 0
+31
+!s108 1648729476.000000
+!s107 C:/Users/jburne/Documents/GitHub/C1-jaylen/task2_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/jburne/Documents/GitHub/C1-jaylen/task2_tb.sv|
+!i113 1
+R5
+R6
