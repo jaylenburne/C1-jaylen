@@ -21,7 +21,7 @@ wire a1, a2, a3, a4, notA, notB, notC;
 not n0 (notA, A);
 not n1 (notB, B);
 not n2 (notC, C);
-and and1 (a1, notA, B, C);
+and and1 (a1, notA, B, C); //type of gate, name of gate (output, inputs);
 and and2 (a2, A, notB, C);
 and and3 (a3, A, B, notC);
 and and4 (a4, A, B, C);
@@ -34,7 +34,7 @@ and and33 (a33, A, notB, notC);
 and and44 (a44, A, B, C);
 or res2 (Y2, a11, a22, a33, a44);
 
-//combine
+//combining Y1 an dY2 into a 2 bit output
 or c1 (Y[1], Y1);
 or c2 (Y[0], Y2);
 

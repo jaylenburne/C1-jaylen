@@ -19,8 +19,10 @@ wire term1;
 wire term2;
 wire term3;
 
+//Dataflow
+
 //Y1
-assign term0 = ~A & B & C;
+assign term0 = ~A & B & C; //gate name, inputs with signs to show what type of gate
 assign term1 = A & ~B & C;
 assign term2 = A & B & ~C;
 assign term3 = A & B & C;
@@ -33,7 +35,7 @@ assign term6 = A & ~B & ~C;
 assign term7 = A & B & C;
 assign Y2 = term4 | term5 | term6 | term7;
 
-//combine
+//combining Y1 and Y2 into a 2 bit output
 assign Y[1] = Y1;
 assign Y[0] = Y2;
 
